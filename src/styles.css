@@ -159,13 +159,15 @@ section {
 }
 /* Bookshelf */
 .bookshelf p,
-#kitchen p {
+#kitchen p,
+#studio p {
   color: #fff;
   text-shadow: 1px 1px #000000;
 }
 .shelf {
   width: 50vw;
   background-color: rgba(245, 209, 201, 0.5);
+  margin-bottom: 10vh;
 }
 table,
 tr,
@@ -182,7 +184,7 @@ td {
 }
 .shelf-base {
   background: linear-gradient(to bottom, #d2691e 0%, #c35a0f 100%);
-  height: 100px;
+  height: 10vh;
 }
 #book1-title {
   background-image: url("../media/sputnik.jpg");
@@ -263,7 +265,8 @@ td {
   width: 100%;
   margin-bottom: 20vh;
 }
-.recipe-book {
+.recipe-book,
+.projects {
   display: flex;
   margin: 10px auto;
   width: 90vw;
@@ -282,7 +285,35 @@ td {
   width: 100%;
   height: 70%;
 }
-
+/* studio */
+#studio {
+  background-color: #f5add0;
+  background-image: url("../media/studio.jpg");
+  min-height: 100vh;
+  font-family: monospace;
+  font-size: 1.5em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#studio h1 {
+  color: #341711;
+  background-color: #e84393;
+  width: 100%;
+  margin-bottom: 20vh;
+}
+.project {
+  border: 2px solid #730e3f;
+  border-radius: 10px;
+  width: 30%;
+  background-color: rgba(249, 203, 225, 0.5);
+  color: #000;
+  text-decoration: none;
+}
+.project:hover {
+  border: 2px solid #ce1971;
+}
 /* Responsive */
 @media screen and (max-width: 750px) {
   nav {

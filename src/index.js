@@ -1,4 +1,3 @@
-import "./styles.css";
 // Open Book
 
 var book1 = document.getElementById("book1");
